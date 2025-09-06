@@ -15,19 +15,18 @@ A fictional clothing store built with **React**, featuring product categories, a
 
 To run the project locally:
 
+
 ```bash
+# Clone the repository
 git clone https://github.com/vbarcellos/gardrobe.git
-```
 
-```bash
+# Navigate into the folder
 cd gardrobe
-```
 
-```bash
+# Install dependencies
 npm install
-```
 
-```bash
+# Start the development server
 npm start
 ```
 
