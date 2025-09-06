@@ -2,12 +2,12 @@
 
 A fictional clothing store built with **React**, featuring product categories, a shopping cart, and a checkout page.
 
-👉 [Live Demo on Vercel](https://gardrobe.vercel.app/)
+👉 <a href="https://gardrobe.vercel.app/" target="_blank">Live Demo on Vercel</a>
 
 ---
 
 ## 📸 Preview
-![Gardrobe screenshot](public/preview/gardrobe-screenshot.png)
+![Gardrobe screenshot](public/preview/gardrobe-preview.png)
 
 ---
 
@@ -16,16 +16,18 @@ A fictional clothing store built with **React**, featuring product categories, a
 To run the project locally:
 
 ```bash
-# Clone the repository
 git clone https://github.com/vbarcellos/gardrobe.git
+```
 
-# Navigate into the folder
+```bash
 cd gardrobe
+```
 
-# Install dependencies
+```bash
 npm install
+```
 
-# Start the development server
+```bash
 npm start
 ```
 
