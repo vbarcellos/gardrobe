@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
-import { HomePage } from "./pages/HomePage";
-import { CategoryPage } from "./pages/CategoryPage";
-import { Cart } from "./components/Cart";
-import { fetchProducts } from "./redux/productsSlice";
-import { ThankYouPage } from "./pages/ThankYouPage";
+import { Navbar } from "./components/Navbar.jsx";
+import { Footer } from "./components/Footer.jsx";
+import { HomePage } from "./pages/HomePage.jsx";
+import { CategoryPage } from "./pages/CategoryPage.jsx";
+import { Cart } from "./components/Cart.jsx";
+import { fetchProducts } from "./redux/productsSlice.jsx";
+import { ThankYouPage } from "./pages/ThankYouPage.jsx";
 
 export const App = () => {
   const dispatch = useDispatch();

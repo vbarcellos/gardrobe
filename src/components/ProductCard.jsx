@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartSlice";
+import { addToCart } from "../redux/cartSlice.js";
 
 export const ProductCard = ({ product }) => {
   const [isAdded, setIsAdded] = useState(false);

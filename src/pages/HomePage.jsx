@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { ProductList } from "../components/ProductList";
+import { ProductList } from "../components/ProductList.jsx";
 
 export const HomePage = () => {
   const products = useSelector((state) => state.products.items);
