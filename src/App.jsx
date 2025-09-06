@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer.jsx";
 import { HomePage } from "./pages/HomePage.jsx";
 import { CategoryPage } from "./pages/CategoryPage.jsx";
 import { Cart } from "./components/Cart.jsx";
-import { fetchProducts } from "./redux/productsSlice.jsx";
+import { fetchProducts } from "./redux/productsSlice.js";
 import { ThankYouPage } from "./pages/ThankYouPage.jsx";
 
 export const App = () => {
