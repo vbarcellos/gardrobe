@@ -34,11 +34,14 @@ npm start
 
 ## 🛠️ Technologies
 
-- React 18  
-- Redux Toolkit  
-- React Router DOM  
-- Faker.js (for mock product generation)  
-- Vercel (deployment)  
+- **Frontend Framework:** React 18  
+- **State Management:** Redux Toolkit, Redux, React Redux  
+- **Routing:** React Router DOM  
+- **HTTP Requests:** Axios  
+- **Mock Data:** Faker.js (@faker-js/faker)  
+- **Styling:** Custom CSS  
+- **Build & Tooling:** React Scripts (Create React App)  
+- **Deployment:** Vercel (with vercel.json config)
 
 ---
 
