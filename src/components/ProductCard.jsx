@@ -7,20 +7,33 @@ export const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addToCart(product));
+    const priceStr =
+      typeof product.price === "number"
+        ? `$${product.price.toFixed(2)}`
+        : String(product.price).startsWith("$")
+        ? String(product.price)
+        : `$${product.price}`;
+
+    const productForCart = { ...product, price: priceStr };
+
+    dispatch(addToCart(productForCart));
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 2000);
   };
 
-  const GARDROBE_URL = process.env.GARDROBE_BASE_URL || "http://localhost:5000";
+  const imgSrc = product.image;
 
   return (
     <div className="product-card">
-      <img src={`${GARDROBE_URL}${product.image}`} alt={product.name} />
+      <img src={imgSrc} alt={product.name} />
       <div className="product-details">
         <h3>{product.name}</h3>
         <p className="description">{product.description}</p>
-        <p className="price">{product.price}</p>
+        <p className="price">
+          {typeof product.price === "number"
+            ? `$${product.price.toFixed(2)}`
+            : product.price}
+        </p>
       </div>
       <div className="product-actions">
         <button onClick={handleAddToCart} disabled={isAdded}>
